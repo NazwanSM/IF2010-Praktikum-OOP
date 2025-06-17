@@ -1,0 +1,29 @@
+public class LaptopCommand implements ICommand {
+    private Laptop laptop;
+    private int state;
+
+    /**
+     * Constructor untuk membuat LaptopCommand,
+     * Terdapat 2 state untuk laptop:
+     * - State 0: laptop mati
+     * - State 1: laptop hidup dan digunakan
+     * 
+     * State awal laptop adalah mati
+     * 
+     * @param laptop      Objek laptop yang digunakan
+     */
+    public LaptopCommand(Laptop laptop) {}
+    
+    /**
+     * Mengeksekusi aktivitas untuk laptop sesuai dengan state
+     * - Bila state sekarang = 0, maka laptop akan dinyalakan dan state berubah menjadi menyala
+     * - Bila state sekarang = 1, maka laptop akan digunakan
+     */
+    public void execute() {}
+
+    /**
+     * Mengembalikan laptop ke state semula
+     * - Bila state sekarang selain 0, maka laptop akan dimatikan
+     */
+    public void undo() {}
+}
